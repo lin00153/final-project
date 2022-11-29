@@ -51,7 +51,7 @@ table {
 body {
     background: white;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 14px; /*this is 1em*/
     line-height: 1.5;
     color: black;
 }
@@ -75,3 +75,69 @@ h2 {
 p {
     margin-bottom: 1em; /* font size is 14, so 1em is 14 */
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    background: #222222;
+    padding-top: 14px;
+}
+
+.container {
+    padding: 14px;
+}
+
+.logo {
+    background: #c78b07;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav a:link, 
+nav a:visited {
+    font-size: 18px;
+    color:#c78b07;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    padding-top: 17px;
+    padding-bottom: 17px;
+} 
+
+nav .current a:link,
+nav .current a:visited {
+    color:#000000;
+    background:#c78b07;
+
+}
+
+/* section specific styles*/
+.header-welcome {
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}
+.header-welcome .container {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* about section*/
+.section-about {
+    background-color: #ffe6ac;   
+}
+
+/* desktop style*/
+@media screen and (min-width:1168px){
+    .container {
+        width: 1140px;
+        margin: 0 auto;
+    }
+}
+    
