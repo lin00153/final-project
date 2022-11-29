@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Three Star Media</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -130,19 +136,33 @@
                 
                 <div class="form">
                     <h3>Send us a message</h3>
-                    <p>Full Name</p>
-                    <p>Email</p>
-                    <p>Message</p>
-                    <button>Send</button>
+                    <form action="/action_page.php" id="form1">
+                        <label for="fname">Full Name</label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email"><br><br>
+                        <label for="message">Message</label>
+                        <input type="text" id="message" name="message"><br><br>
+                        <input type="submit" value="Send">
+                    </form>
                 </div>
 
                 <div class="table">
                     <h3>Hours of operation</h3>
-                    <P>Days	Hours
-                    <p>Monday - Friday
-                    <p>	9 AM - 6 PM  </p>
-                    <p>Saturday - Sunday</p>
-                    <p>Closed</p>  
+                    <table style="width:100%">
+                        <tr>
+                          <th>Days</th>
+                          <th>Hours</th>
+                        </tr>
+                        <tr>
+                            <th>Monday - Friday</th>
+                            <th>9 AM - 6 PM</th>
+                        </tr>
+                        <tr>
+                            <th>Saturday - Sunday</th>
+                            <th>Closed</th>
+                        </tr>
+                    </table>
                 </div>
 
 
