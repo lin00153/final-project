@@ -70,6 +70,19 @@ h2 {
     margin-bottom: 18px;
 }
 
+h3 {
+    font-size: 32px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+h4 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
 /* h3, h4...etc */
 
 p {
@@ -132,12 +145,309 @@ nav .current a:visited {
 .section-about {
     background-color: #ffe6ac;   
 }
+.header-welcome .button {
+    background-color:#c78b07;
+    color:black;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    padding: 24px;
+}
+/* our service section*/
 
+
+.section-services h3 {
+    padding:14px;
+    padding-bottom: 14px;;
+}
+
+.section-services p {
+    padding:14px;
+    padding-bottom: 50px;
+}
+
+
+.services-digital img,
+.services-marketing img, 
+.services-video img, 
+.services-web img, 
+.services-print img {
+    width: 100%;
+}
+
+.services-digital, 
+.services-marketing, 
+.services-video, 
+.services-web, 
+.services-print {
+    background-color: #ffe6ac; 
+    margin-bottom: 14px;  
+}
+
+.services-digital .button {
+    background-color:#222222;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 14px;
+    padding: 24px;
+}
+
+.services-marketing .button {
+    background-color:#222222;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 14px;
+    padding: 24px;
+}
+
+.services-video .button {
+    background-color:#222222;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 14px;
+    padding: 24px;
+}
+
+.services-web .button {
+    background-color:#222222;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 14px;
+    padding: 24px;
+}
+
+.services-print .button {
+    background-color:#222222;
+    color:white;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 14px;
+    padding: 24px;
+}
+.services-marketing .button {
+    padding-bottom: 14px;
+}
+/*section-vision sction*/
+.section-vision {    
+    background-image: url(../images/vision.jpg);
+    background-size: cover;
+    padding-top: 68px;
+    padding-bottom: 68px;
+    color: white;
+}
+/*our team section*/
+.team-john, .team-bob{
+    background-color: #ffe6ac; 
+    margin-bottom: 14px;  
+    padding: 18px;
+    width: 100%;
+} 
+
+.team-john img, .team-bob img{
+    width: 100%;
+}
+
+hr {
+    border-color: #c68a05;
+}
+
+/*contact us section*/
+.box{
+    width: 980px;
+    height: 350px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+#fname, #email, #message {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+#send {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: bold;
+    margin-bottom: 18px;
+    color: #c78b07;
+    background-color: black; 
+}
+/*table section*/
+.operation-1 {
+    display: grid;
+    grid-template-columns: repeat(2 , 3fr);
+    font-size: 1em;
+}
+.operation-1 .table1 {
+    text-align: center;
+    background-color:#ffe6ac;
+    border: 1px solid black;
+    padding: 14px;
+}
+.operation-1 .table2 {
+    text-align: center;
+    background-color:#ffe6ac;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    padding: 14px;
+}
+.operation-1 .table3 {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 14px;
+}
+.operation-1 .table4{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 14px;
+}
+.operation-1 .table5 {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 14px;
+}
+.operation-1 .table6{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 14px;
+}
+/*footer section*/
+.footer {
+    color: #c78b07;
+    background-color: black;
+    padding: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 2em;
+}
 /* desktop style*/
-@media screen and (min-width:1168px){
+
+@media screen and (min-width:760px){
     .container {
-        width: 1140px;
+        width: 706px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:1200px){
+    .container {
+        width: 1168px;
+        padding: 0 16px;;
         margin: 0 auto;
     }
 }
     
+nav .container {
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+
+nav ul{
+    display: flex;
+
+}
+
+nav li{
+    margin-left: 1.5em;
+}
+
+ .logo {
+     margin-top: 1em;
+     margin-bottom: 1em;
+     margin-left: 5em;
+     padding: 0;
+     background: none;
+ }
+
+nav .current a:link,
+nav .current a:visited {
+    padding-left: 42px;
+    padding-right: 42px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color:#000000;
+    background:#c78b07;
+}
+
+.header-welcome {
+    width: 100%;
+    height: 400px;
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.header-welcome .container {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    height: 422px;
+    width: 1000px;
+}
+/*about us*/
+.section-about .container{
+    background-color: #ffe6ac;
+    height: 275px;  
+}
+
+.aboutus-image  {
+    float: left;
+    width: 480px; 
+    height: 245px;
+    padding-top: 14px;
+    padding-left: 80px;
+    padding-right: 14px;
+}
+
+.aboutus-text {
+    padding-right: 80px;
+}
+
+/*serviec section*/
+.section-services {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.section-services .container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    grid-gap: 14px;
+}
+/*our team section*/
+.section-team .container{
+    display: flex;
+    flex-direction:row;
+    background-color: #ffe6ac;
+    width: 948px;
+    height: 634px;
+}
+.team-john, .team-bob{
+    display: grid;
+}
+.john-image {
+    float:left;
+    height: 318px;
+    width: 476px;
+}
+.bob-image {
+    float:right;
+    height: 318px;
+    width: 476px;
+}
+.john-text{
+    float:right;
+}
+.bob-text{
+    float:left;
+}
